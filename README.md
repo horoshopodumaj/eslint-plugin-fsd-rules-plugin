@@ -1,8 +1,8 @@
-## eslint-plugin-fsd-rules-plugin
+# eslint-plugin-fsd-rules-plugin
 
 ---
 
-### Install
+## 💿 Install
 
 \```
 npm install --save-dev eslint-plugin-fsd-rules-plugin
