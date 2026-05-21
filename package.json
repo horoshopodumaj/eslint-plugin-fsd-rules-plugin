@@ -25,5 +25,13 @@
   },
   "peerDependencies": {
     "eslint": ">=6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin.git"
+  },
+   "bugs": {
+    "url": "https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/issues"
+  },
+  "homepage": "https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin#readme"
 }
