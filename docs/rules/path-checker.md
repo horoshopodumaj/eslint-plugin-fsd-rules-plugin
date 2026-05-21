@@ -1,35 +1,30 @@
-# custom plugin for fsd production  (`fsd-rules-plugin`)
+# fsd-rules-plugin/path-checker
 
-Please describe the origin of the rule here.
+📝 Checking file imports from a single module.
 
-## Rule Details
+Within a single component, all entities that are created and used in this component should be imported from this folder, not from the public api.
 
-This rule aims to...
+## 📖 Rule Details
 
-Examples of **incorrect** code for this rule:
+This rule applies when importing.
 
-```js
-
-// fill me in
-
-```
-
-Examples of **correct** code for this rule:
-
-```js
-
-// fill me in
-
-```
+This rule has options.
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+```js
+{
+  "fsd-rules-plugin/path-checker": ["error",
+    {
+      alias: '@'
+    }
+  ]
+}
+```
 
-## When Not To Use It
+- `alias` is indicated if you use alias in your project, you must specify which alias you are using, for example, '@'.
 
-Give a short description of when it would be appropriate to turn off this rule.
+### 🔎 Implementation
 
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+- [Rule source](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/lib/rules/path-checker.js)
+- [Test source](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/tests/lib/rules/path-checker.js)
