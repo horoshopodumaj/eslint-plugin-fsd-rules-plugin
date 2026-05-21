@@ -1,35 +1,32 @@
-# public api imports (`public-api-imports`)
+# fsd-rules-plugin/public-api-imports
 
-Please describe the origin of the rule here.
+📝 The rule checks whether absolute imports are applied correctly in the component.
 
-## Rule Details
+Absolute import is allowed only from the public api (index.ts).
 
-This rule aims to...
+## 📖 Rule Details
 
-Examples of **incorrect** code for this rule:
+This rule applies when importing.
 
-```js
-
-// fill me in
-
-```
-
-Examples of **correct** code for this rule:
-
-```js
-
-// fill me in
-
-```
+This rule has options.
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+```js
+{
+  "fsd-rules-plugin/public-api-imports": ["error",
+    {
+      alias: '@',
+      testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorators.tsx']
+    }
+  ]
+}
+```
 
-## When Not To Use It
+- `alias` is indicated if you use alias in your project, you must specify which alias you are using, for example, '@'.
+- `testFilesPatterns` contains an array of regular expressions with the test file extension, in which it is necessary to verify the correctness of the import from the test api.
 
-Give a short description of when it would be appropriate to turn off this rule.
+### 🔎 Implementation
 
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+- [Rule source](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/lib/rules/public-api-imports.js)
+- [Test source](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/tests/lib/rules/public-api-imports.js)
