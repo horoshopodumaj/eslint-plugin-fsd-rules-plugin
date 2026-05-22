@@ -13,6 +13,7 @@ npm install --save-dev eslint-plugin-fsd-rules-plugin
 | ------------------- | --------------------------------------------------------------- |
 | [path-checker](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/docs/rules/path-checker.md)        | Checking file imports from a single module                      |
 | [public-api-imports](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/docs/rules/public-api-imports.md)  | Absolute import is allowed only from the public api (index.ts)  |
+| [layer-imports](https://github.com/horoshopodumaj/eslint-plugin-fsd-rules-plugin/blob/master/docs/rules/layer-imports.md)  | A layer can only import the underlying layers  |
 
 ## [eslint.config.js](https://eslint.org/docs/latest/use/configure/configuration-files)
 
@@ -27,6 +28,7 @@ export default [
         rules: {
             "fsd-rules-plugin/path-checker": "error",
             "fsd-rules-plugin/public-api-imports": "error"
+            "fsd-rules-plugin/layer-imports": "error"
         },
     }
 ]
@@ -41,6 +43,7 @@ module.exports = {
     rules: {
         "fsd-rules-plugin/path-checker": "error",
         'fsd-rules-plugin/public-api-imports': "error",
+        'fsd-rules-plugin/layer-imports': "error",
     },
 }
 
