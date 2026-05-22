@@ -1,21 +1,7 @@
-/**
- * @fileoverview custom plugin for fsd production 
- * @author Diana
- */
 "use strict";
-
-//------------------------------------------------------------------------------
-// Requirements
-//------------------------------------------------------------------------------
 
 const rule = require("../../../lib/rules/path-checker.js"),
   RuleTester = require("eslint").RuleTester;
-
-
-
-//------------------------------------------------------------------------------
-// Tests
-//------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester();
 ruleTester.run("path-checker", rule, {

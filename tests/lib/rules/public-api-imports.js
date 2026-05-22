@@ -1,7 +1,3 @@
-/**
- * @fileoverview public api imports
- * @author Diana
- */
 "use strict";
 
 
